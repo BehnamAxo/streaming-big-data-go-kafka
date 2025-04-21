@@ -81,3 +81,4 @@ To stop the Kafka stack:
 ```bash
 docker-compose down
 ```
+
