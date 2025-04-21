@@ -18,6 +18,8 @@ func main() {
 
 	defer writer.Close()
 
+	time.Sleep(5 * time.Second)
+
 	for {
 		message := fmt.Sprintf(`{"level": "INFO", "timestamp": "%s", "message": "User %d clicked button"}`,
 			time.Now().Format(time.RFC3339), rand.Intn(1000))
